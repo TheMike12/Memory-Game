@@ -79,7 +79,7 @@ let counter = 0;
 let first_card_id = null;
 let second_card_id = null;
 
-const resolved = []; // All matched cards will be pushed into this array.
+let resolved = []; // All matched cards will be pushed into this array.
 
 function cardClicked(e){ // Whenever a card is selected, this function will display the picture on it.
     clicked.innerHTML = `Clicks: ${counter + 1}`;
@@ -108,7 +108,7 @@ function cardClicked(e){ // Whenever a card is selected, this function will disp
                     resolved.push(first_card_id.getAttribute("id"), second_card_id.getAttribute("id"));
                     first_card_id = null;
                     second_card_id = null;
-                    if (resolved.length === 32) { // If all thirty-two cards have been matched the game is over.
+                    if (resolved.length === 4) { // If all thirty-two cards have been matched the game is over.
                         const show_cards = document.getElementById('cards');
                         const done = document.getElementById('finish');
                         const text = document.getElementById('restart_text');
@@ -116,6 +116,7 @@ function cardClicked(e){ // Whenever a card is selected, this function will disp
                         show_cards.style.display = "none";
                         done.style.display = "flex";
                         counter = 0;
+                        resolved = [];
                         ids.forEach(function(i){
                             let complete = i.getAttribute("class").split(" ")[1];
                             if (complete === "resolved") {
