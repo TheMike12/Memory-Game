@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website">
+        <meta name="author" content="N/A">
+        <meta name="keywords" content="Nothing yet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./pictures/back_of_card.png"/>
+        <link rel="stylesheet" type="text/css" href="./styles/index.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="./styles/cards.css" media="screen"/>
+        <title>Memory game</title>
+    </head>
+    <body>
+        <div id="clicks">Clicks: 0</div>
+        <div class="board">
+            <div id="start_text" onclick="start()">Start</div>
+            <section id="cards" class="cards">
+                <div id="pic0" class="picture_0 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic1" class="picture_0 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic2" class="picture_0 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic3" class="picture_0 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic4" class="picture_1 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic5" class="picture_1 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic6" class="picture_1 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic7" class="picture_1 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic8" class="picture_2 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic9" class="picture_2 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic10" class="picture_2 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic11" class="picture_2 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic12" class="picture_3 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic13" class="picture_3 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic14" class="picture_3 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic15" class="picture_3 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic16" class="picture_4 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic17" class="picture_4 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic18" class="picture_4 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic19" class="picture_4 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic20" class="picture_5 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic21" class="picture_5 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic22" class="picture_5 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic23" class="picture_5 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic24" class="picture_6 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic25" class="picture_6 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic26" class="picture_6 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic27" class="picture_6 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic28" class="picture_7 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic29" class="picture_7 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic30" class="picture_7 back_of_card" onclick="cardClicked(event)"></div>
+                <div id="pic31" class="picture_7 back_of_card" onclick="cardClicked(event)"></div>
+            </section>
+        </div>
+        <div id="matched">Already chosen</div>
+        <div id="finish"></div>
+        <div id="restart_text" onclick="start()">Play again</div>
+        <script src="memory_game.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+#cards {
+    display: none;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    justify-content: space-around;
+    grid-row-gap: 40px;
+    margin-top: 36px;
+}
+
+.back_of_card {
+    background-image: repeating-linear-gradient(#007399, #0099cc, #00b0eb, #0099cc, #007399) !important;
+    width: 100px !important;
+    height: 140px !important;
+    border: 1px solid black !important;
+}
+
+.back_of_card:hover {
+    background-image: repeating-linear-gradient(#0397c9, #04bbf8, #2ebeee, #04bbf8, #0397c9) !important;
+    box-shadow: 0 1px 15px 5px lightskyblue;
+    cursor: pointer;
+}
+
+.back_of_card:active {
+    background-image: repeating-linear-gradient(#007399, #0099cc, #00b0eb, #0099cc, #007399);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.picture_0 {
+    background: url(../pictures/picture_1.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_1 {
+    background: url(../pictures/picture_2.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_2 {
+    background: url(../pictures/picture_3.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_3 {
+    background: url(../pictures/picture_4.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_4 {
+    background: url(../pictures/picture_5.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_5 {
+    background: url(../pictures/picture_6.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_6 {
+    background: url(../pictures/picture_7.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.picture_7 {
+    background: url(../pictures/picture_8.png);
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+}
