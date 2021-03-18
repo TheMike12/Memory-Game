@@ -108,7 +108,7 @@ function cardClicked(e){ // Whenever a card is selected, this function will disp
                     resolved.push(first_card_id.getAttribute("id"), second_card_id.getAttribute("id"));
                     first_card_id = null;
                     second_card_id = null;
-                    if (resolved.length === 4) { // If all thirty-two cards have been matched the game is over.
+                    if (resolved.length === 32) { // If all thirty-two cards have been matched the game is over.
                         const show_cards = document.getElementById('cards');
                         const done = document.getElementById('finish');
                         const text = document.getElementById('restart_text');
