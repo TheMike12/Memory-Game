@@ -71,21 +71,6 @@ function start() { // Once the start button is clicked, the game will start.
     text.style.display = "none";
     randomizer(ids);
     show_cards.style.display = "grid";
-
-    /*let time = 0;
-
-    document.getElementById("time").innerHTML = time;
-    
-    function seconds() {
-        time++;
-        document.getElementById("time").innerHTML = time;
-    }
-
-    var aaa = function stopSeconds() {  
-        clearInterval(current_time);
-    }
-
-    let current_time = setInterval(seconds, 1000);*/ // This will display how many seconds the player has been playing.
 }
 
 let clicked = document.getElementById("clicks");
@@ -111,7 +96,7 @@ function cardClicked(e){ // Whenever a card is selected, this function will disp
         .replace('back_of_card', 'none');
     if (first_card_id && !second_card_id) { // If a first card has already been chosen.
         second_card_id = pick;
-        if (second_card_id.getAttribute('id') !== first_card_id.getAttribute('id')) {
+        if (second_card_id.getAttribute('id') !== first_card_id.getAttribute('id')) { // When two different cards are picked, both are put into variables.
             const compareFirst = first_card_id.getAttribute("class").split(" ")[0];
             const compareSecond = second_card_id.getAttribute("class").split(" ")[0];
             setTimeout(() => { 
